@@ -1,0 +1,102 @@
+.chatContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  .chat {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    padding: 8px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    > div {
+      background-color: #FCFCFC;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      > img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .mensajes {
+    position: fixed;
+    background-color: $blue;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    color: $black;
+    width: calc(100vw - 10px);
+    height: calc(100% - 150px);
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 100px;
+
+    @media (min-width: 1024px) {
+      width: 400px;
+      right: 230px;
+      height: 670px;
+    }
+
+    .list_de_mensajes {
+      background-color: transparent;
+      height: calc(100% - 60px);
+      padding: 20px;
+      overflow-y: scroll;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+
+      > li {
+        background-color: $white;
+        color: $black;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+        margin-bottom: 20px;
+        padding: 10px;
+        width: fit-content;
+        align-self: flex-end;
+
+        &:nth-child(2n) {
+          background-color: rgba(139, 134, 134, 0.0509803922);
+          color: $white;
+          align-self: flex-start;
+        }
+      }
+    }
+
+    .input_de_mensajes {
+      position: absolute;
+      width: calc(100% - 20px);
+      height: 40px;
+      bottom: 10px;
+      right: 10px;
+      background-color: $white;
+      border: 0;
+      border-radius: 5px;
+      color: #fcfcfc;
+      padding: 0 10px;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.bg {
+    padding: 0 5px;
+    color: $white;
+
+    &.bg--aws {
+        background-color: #232f3e;
+        color: #fffffe;
+    }
+
+    &.bg--azure {
+        background-color: #0078d4;
+        color: white;
+    }
+
+    &.bg--gcp {
+        background-color: #5f6368;
+        color: white;
+    }
+    
+    &.bg--cloud {
+        background-color: #73d0e0;
+        color: #1d5665;
+    }
+
+    &.bg--cicd {
+        background-color: #faaf24;
+        color: $black;
+    }
+
+    &.bg--backend {
+        background-color: $blue; 
+    }
+
+    &.bg--frontend {
+        background-color: $green; 
+    }
+
+    &.bg--golang {
+        background-color: #6ad7e5;
+        color: #FFF;
+    }
+    &.bg--php {
+        background-color: #8993c1;
+        color: #20222f;
+    }
+    &.bg--js {
+        background-color: #efd81d;
+        color: #000;
+    }
+    &.bg--vue {
+        background-color: #3fb27f;
+        color: #32475b;
+    }
+    &.bg--react {
+        background-color: #20232a;
+        color: #61dafb;
+    }
+}
